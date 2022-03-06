@@ -29,7 +29,7 @@
                 <td th:text="${persona.telefono}"></td>
                 <td>
                     <a th:href="@{/editar/}+${persona.id}" class="btn btn-warning">Editar</a>
-                    <a class="btn btn-danger">Eliminar</a>
+                    <a th:href="@{/eliminar/}+${persona.id}" class="btn btn-danger">Eliminar</a>
                 </td>
             </tr>
             </tbody>
