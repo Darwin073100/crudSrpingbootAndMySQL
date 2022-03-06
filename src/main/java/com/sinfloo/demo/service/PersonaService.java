@@ -22,7 +22,7 @@ public class PersonaService implements IpersonaService {
 
     @Override
     public Optional<Persona> listarId(int id) {
-        return Optional.empty();
+        return data.findById(id);
     }
 
     @Override
